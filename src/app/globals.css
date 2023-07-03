@@ -2,19 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --bg-color-light: #cad2c5; /* Light grey background color */
-  --bg-color-dark: #212131; /* Dark grey background color */
+html{
+  @apply bg-gray-100
 }
 
-body {
-  background-color: var(--bg-color-light); /* Set light background color as default */
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--bg-color-dark); /* Set dark background color when in dark mode */
-  }
+html.dark{
+  @apply bg-stone-800
 }
 
 
