@@ -4,16 +4,14 @@ import { Navbar } from "@/components/Navbar"
 import Head from "next/head"
 
 export default function About() {
-    <>
+    return(
+        <>
         <Head>
             <title>About Me</title>
         </Head>
-
-        <Navbar />
-
         <main>
             About Me
         </main>
     </>
-    
+    ) 
 }
