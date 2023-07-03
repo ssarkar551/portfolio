@@ -1,7 +1,19 @@
 "use client"
-export default function AboutPage() {
-    <div className="flex">
-        <h1>About Page</h1>
-    </div>
+
+import { Navbar } from "@/components/Navbar"
+import Head from "next/head"
+
+export default function About() {
+    <>
+        <Head>
+            <title>About Me</title>
+        </Head>
+
+        <Navbar />
+
+        <main>
+            About Me
+        </main>
+    </>
     
 }

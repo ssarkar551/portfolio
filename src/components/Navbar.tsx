@@ -53,6 +53,7 @@ export const Navbar = () => {
             About
           </NavigationMenu.Link>
         </NavigationMenu.Item>
+        <NavigationMenu.Indicator className="NavigationMenuIndicator" />
         <div
           className={clsx(
             "absolute right-2 top-0 pt-3",

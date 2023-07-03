@@ -10,4 +10,11 @@ html.dark{
   @apply bg-stone-800
 }
 
+.NavigationMenuIndicator {
+  background-color: red;
+}
+.NavigationMenuIndicator[data-orientation='horizontal'] {
+  height: 3px;
+  transition: width, transform, 250ms ease;
+}
 
