@@ -7,7 +7,7 @@ const AvatarDemo = () => (
     <Avatar.Root className=" inline-flex h-[300px] w-[300px] select-none items-center 
                               justify-center overflow-hidden rounded-full align-middle drop-shadow-xl">
       <Avatar.Image
-        className="h-full w-full rounded-[inherit] object-cover"
+        className="h-full w-full rounded-[inherit] object-cover w-16 h-14 md:w-32 md:h-30 lg:w-60 lg:h-50"
         src="https://github.com/ssarkar551/portfolio/blob/master/public/DSC_0740.jpg?raw=true"
         alt="SS"
       />
