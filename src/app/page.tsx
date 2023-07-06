@@ -22,7 +22,7 @@ export default function Home() {
             <div
               className={clsx("container mx-auto flex flex-col items-center")}
             >
-              <h1 className="text-4xl font-bold mb-4">
+              <h1 className="text-4xl font-bold mb-4 font-mono">
                 Welcome to My Portfolio
               </h1>
             </div>
@@ -32,7 +32,7 @@ export default function Home() {
                 "container mx-auto flex items-left columns-2 gap-8"
               )}
             >
-              <p className={clsx("text-lg mb-8 `${regularFont.className}`")}>
+              <p className={clsx("text-lg mb-8 font-mono")}>
                 Hi there! I am Subham, a frontend developer passionate about
                 crafting captivating web experiences. With expertise in HTML,
                 CSS, and JavaScript, I transform designs into pixel-perfect
@@ -47,7 +47,7 @@ export default function Home() {
             </div>
 
             <div className={clsx("py-20")}>
-              <p className="text-lg mb-8">
+              <p className="text-lg mb-8 font-mono">
                 Want to know more about me? Click{" "}
                 <Link href="/about" className={clsx("font-semibold text-cyan-700")}>here</Link>
                 {" "}then

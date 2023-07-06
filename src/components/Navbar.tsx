@@ -42,7 +42,7 @@ export const Navbar = () => {
             className={clsx(
               `${
                 pathname === "/about"
-                  ? "text-indigo-700 dark:text-indigo-200"
+                  ? "text-blue-700 dark:text-blue-300 font-semibold"
                   : "text-black dark:text-white"
               }`,
               "px-1 py-3 lg:px-2",
