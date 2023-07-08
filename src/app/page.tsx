@@ -18,9 +18,9 @@ export default function Home() {
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
           exit={{ opacity: 0 }}
         >
-          <div className="container h-screen mx-auto flex flex-col px-4 py-10">
+          <div className="flex flex-col px-4 py-10">
             <div
-              className={clsx("container mx-auto flex flex-col items-center")}
+              className={clsx("flex flex-col items-center")}
             >
               <h1 className="text-4xl font-bold mb-4 font-mono">
                 Welcome to My Portfolio
@@ -29,9 +29,12 @@ export default function Home() {
 
             <div
               className={clsx(
-                "container mx-auto flex items-left columns-2 gap-8"
+                "container mx-auto grid grid-cols-1 place-items-stretch columns-2 gap-8 justify-start"
               )}
             >
+              <div className={clsx("flex px-15 ")}>
+                <AvatarDemo />
+              </div>
               <p className={clsx("text-lg mb-8 font-mono")}>
                 Hi there! I am Subham, a frontend developer passionate about
                 crafting captivating web experiences. With expertise in HTML,
@@ -41,9 +44,7 @@ export default function Home() {
                 a lasting impression. Lets collaborate and bring your vision to
                 life with seamless interactions and stunning visuals!
               </p>
-              <div>
-                <AvatarDemo />
-              </div>
+              
             </div>
 
             <div className={clsx("py-20")}>
