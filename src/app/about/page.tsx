@@ -32,14 +32,14 @@ export default function About() {
           frontend development
         </motion.span>{" "}
         now has me quite captivated for some time. I love taking pictures and coding, and learning new things.
-        Presently, I've been exploring different aspects of frontend development, and there's no better way to learn than trying it out yourself. Coding has given me the medium to channel my creativity!{" "}
+        Presently, I have been exploring different aspects of frontend development, and theres no better way to learn than trying it out yourself. Coding has given me the medium to channel my creativity!{" "}
         <motion.span
           className="font-bold text-cyan-600"
           initial="initial"
           animate="animate"
           variants={textVariants}
         >
-          Let's see where this journey takes us!
+          Lets see where this journey takes us!
         </motion.span>
       </article>
           
