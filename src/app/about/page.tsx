@@ -1,10 +1,14 @@
 "use client";
 
-import { Navbar } from "@/components/Navbar";
 import clsx from "clsx";
+import { motion } from "framer-motion";
 import Head from "next/head";
 
 export default function About() {
+  const textVariants = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+  };
   return (
     <>
       <Head>
@@ -15,26 +19,29 @@ export default function About() {
             <h1 className={clsx("text-center capitalize bold font-mono")}>A little about myself</h1>
         </div>
         <div className={clsx("px-5 lg:px-20 py-15")}>
-            <article className={clsx("py-4 lg:py-8 lg:text-xl font-mono")}>
-            Hey there, welcome to my portfolio site. I am B.Tech. grad from
-            Academy of Technology, West Bengal, India. Even though I did my
-            bachelors in Electronics and Communication, here I am doing frontend
-            development now :P
-            </article>
-            <p className={clsx("py-4 lg:py-8 lg:text-xl font-mono")}>
-            I love taking pictures and coding and learning new
-            things
-            </p>
-            <p className={clsx("py-4 lg:py-8 lg:text-xl font-mono")}>
-            Presently, frontend development has got me quite captivated
-            for sometime and I have been trying to learn different aspects of it.
-            And I think there is no better way to learn something than trying it
-            out yourself. I have always liked creating new things and now coding
-            has given me the medium to channel my creativity!
-            </p>
-            <p className={clsx("py-4 lg:py-8 lg:text-xl font-mono")}>
-            Lets see where this journey takes us!
-            </p>
+        <article className={clsx("py-4 lg:py-8 lg:text-xl font-mono")}>
+        Hey there, welcome to my portfolio site. I am B.Tech. grad from
+        Academy of Technology, West Bengal, India. Even though I did my
+        bachelors in Electronics and Communication,{" "}
+        <motion.span
+          className="font-bold text-cyan-600"
+          initial="initial"
+          animate="animate"
+          variants={textVariants}
+        >
+          frontend development
+        </motion.span>{" "}
+        now has me quite captivated for some time. I love taking pictures and coding, and learning new things.
+        Presently, I have been exploring different aspects of frontend development, and theres no better way to learn than trying it out yourself. Coding has given me the medium to channel my creativity!{" "}
+        <motion.span
+          className="font-bold text-cyan-600"
+          initial="initial"
+          animate="animate"
+          variants={textVariants}
+        >
+          Lets see where this journey takes us!
+        </motion.span>
+      </article>
           
         </div>
       </main>
